@@ -1,0 +1,40 @@
+{
+  "apis": [
+    {
+      "title": "Weather",
+      "steps": [
+        {
+          "__comment__": "Lesson: Weather Setup -- login and create index configurations",
+          "URL": "https://home.openweathermap.org/users/sign_in",
+          "actions": [
+            {
+              "type": "input",
+              "input_fields": [
+                {
+                  "xpath": "//*[@id=\"user_email\"]",
+                  "value": "hamza.farooq@educative.io"
+                },
+                {
+                  "xpath": "//*[@id=\"user_password\"]",
+                  "value": "hamza123!"
+                }
+              ]
+            },
+            {
+              "type": "click",
+              "click": {
+                "xpath": "//*[@id=\"new_user\"]/input[3]"
+              }
+            },
+            {
+              "type": "compare",
+              "compare": {
+                "html": "<button id=\"create-index-button\" type=\"button\" class=\"stl-btn stl-inline-flex stl-justify-center stl-items-center stl-px-4 stl-typo-display-body stl-h-10 stl-btn-primary\"><span class=\"stl-truncate stl-text-center\">Create Index</span></button>"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

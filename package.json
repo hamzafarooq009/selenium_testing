@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "@markedjs/html-differ": "^4.0.0",
+    "axios": "^0.26.0",
+    "diff": "^5.0.0",
+    "diff-dom": "^4.2.3",
+    "html-compare": "^0.0.1",
+    "html-differ": "^1.0.0",
+    "selenium-webdriver": "^4.1.1"
+  },
+  "type": "commonjs"
+}

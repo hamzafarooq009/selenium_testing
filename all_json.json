@@ -1,0 +1,88 @@
+{
+    "apis": [
+      {
+        "title": "algolia",
+        "steps": [
+          {
+            "__comment__": "Lesson: Algolia Setup -- login and create index configurations",
+            "URL": "https://www.algolia.com/users/sign_in",
+            "actions": [
+              {
+                "type": "input",
+                "input_fields": [
+                  {
+                    "xpath": "//input[@id=\"user_email\"]",
+                    "value": "ishrat.fatima@educative.io"
+                  },
+                  {
+                    "xpath": "//input[@id=\"user_password\"]",
+                    "value": "A123456!"
+                  }
+                ]
+              },
+              {
+                "type": "click",
+                "click": {
+                  "xpath": "//form[@id=\"new_user\"]//button"
+                }
+              },
+              {
+                "type": "click",
+                "click": {
+                  "xpath": "//a[@id=\"data-root-section\"]"
+                }
+              },
+              {
+                "type": "click",
+                "click": {
+                  "xpath": "//a[@id=\"indices-list-sidebar-link\"]"
+                }
+              },
+              {
+                "type": "click",
+                "click": {
+                  "xpath": "//button[@id=\"create-index-button\"]"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Weather",
+        "steps": [
+          {
+            "__comment__": "Lesson: Weather Setup -- login and create index configurations",
+            "URL": "https://home.openweathermap.org/users/sign_in",
+            "actions": [
+              {
+                "type": "input",
+                "input_fields": [
+                  {
+                    "xpath": "//*[@id=\"user_email\"]",
+                    "value": "hamza.farooq@educative.io"
+                  },
+                  {
+                    "xpath": "//*[@id=\"user_password\"]",
+                    "value": "hamza123!"
+                  }
+                ]
+              },
+              {
+                "type": "click",
+                "click": {
+                  "xpath": "//*[@id=\"new_user\"]/input[3]"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+
+
+                  // "html_to_be_checked":"<button id=\"create-index-button\" type=\"button\" class=\"stl-btn stl-inline-flex stl-justify-center stl-items-center stl-px-4 stl-typo-display-body stl-h-10 stl-btn-primary\"><span class=\"stl-truncate stl-text-center\">Create Index</span></button>"
+                //   "html": "<div class=\"text-center\"><a class=\"btn_like\" href=\"https://openweathermap.org/history-bulk\" style=\"width: 140px;\" target=\"_blank\">Learn more</a><a class=\"btn_like\" href=\"/history_bulks/new\" style=\"width: 140px;\">Go to purchase</a></div>"
+                                // "html": "<p>You can download data from <a href=\"/history_bulks\">Personal account</a> or <a href=\"mailto:info@openweathermap.org\">contact us</a> to order it.</p>"       
+
